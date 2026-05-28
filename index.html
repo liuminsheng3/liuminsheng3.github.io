@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert game guides, walkthroughs, tips and strategies for the latest and most popular games.">
+    <title>Game Guides Network</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --bg-card: #161b22;
+            --text: #c9d1d9;
+            --text-dim: #8b949e;
+            --accent: #58a6ff;
+            --border: #30363d;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 1.5rem 2rem;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(180deg, #0d1117 0%, #161b22 100%);
+        }
+        .hero h1 { font-size: 2.5rem; color: #f0f6fc; margin-bottom: 0.5rem; }
+        .hero p { color: var(--text-dim); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+        .hero .count { color: var(--accent); font-weight: bold; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem 1.5rem; }
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        .game-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            transition: border-color 0.2s, transform 0.15s;
+            text-decoration: none;
+            display: block;
+            color: var(--text);
+        }
+        .game-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+        .game-card h3 { font-size: 1.05rem; color: #f0f6fc; margin-bottom: 0.25rem; }
+        .game-card .desc { color: var(--text-dim); font-size: 0.85rem; }
+        .game-card .tag {
+            display: inline-block;
+            background: rgba(88,166,255,0.15);
+            color: var(--accent);
+            font-size: 0.72rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-top: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            color: var(--text-dim);
+            font-size: 0.82rem;
+            border-top: 1px solid var(--border);
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+        .section-title {
+            font-size: 1.3rem;
+            color: #f0f6fc;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🎮 Game Guides Network</h1>
+        <p>Expert walkthroughs, tips, and strategies for <span class="count">14</span> games — written by players, for players.</p>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Explore Our Guides</h2>
+        <div class="game-grid">
+            <a href="/black-myth-wukong/" class="game-card">
+                <h3>🐵 Black Myth: Wukong</h3>
+                <p class="desc">Complete walkthroughs, boss strategies, builds, and tier lists.</p>
+                <span class="tag">14 guides</span>
+            </a>
+            <a href="/monster-hunter-wilds/" class="game-card">
+                <h3>⚔️ Monster Hunter Wilds</h3>
+                <p class="desc">Weapon guides, monster strategies, farming routes, and builds.</p>
+                <span class="tag">6 guides</span>
+            </a>
+            <a href="/elden-ring-nightreign/" class="game-card">
+                <h3>💀 Elden Ring Nightreign</h3>
+                <p class="desc">Survival mode strategies, character builds, and boss tactics.</p>
+                <span class="tag">6 guides</span>
+            </a>
+            <a href="/phantom-blade-zero/" class="game-card">
+                <h3>🗡️ Phantom Blade Zero</h3>
+                <p class="desc">Combat guides, weapon unlocks, secret locations, and tips.</p>
+                <span class="tag">6 guides</span>
+            </a>
+            <a href="/star-survivors/" class="game-card">
+                <h3>🚀 Star Survivors</h3>
+                <p class="desc">Survivor builds, upgrade paths, enemy guides, and strategies.</p>
+                <span class="tag">6 guides</span>
+            </a>
+            <a href="/crimson-desert/" class="game-card">
+                <h3>🏜️ Crimson Desert</h3>
+                <p class="desc">Open-world guides, combat mechanics, quest walkthroughs.</p>
+                <span class="tag">6 guides</span>
+            </a>
+            <a href="/vampire-crawlers/" class="game-card">
+                <h3>🧛 Vampire Crawlers</h3>
+                <p class="desc">Dungeon strategies, character builds, and loot farming guides.</p>
+                <span class="tag">6 guides</span>
+            </a>
+            <a href="/besmirch/" class="game-card">
+                <h3>🩸 Besmirch</h3>
+                <p class="desc">Souls-like combat tips, boss guides, and progression paths.</p>
+                <span class="tag">6 guides</span>
+            </a>
+            <a href="/wicked-seed/" class="game-card">
+                <h3>🌱 Wicked Seed</h3>
+                <p class="desc">Roguelike strategies, seed combinations, and build optimization.</p>
+                <span class="tag">6 guides</span>
+            </a>
+            <a href="/banquet-for-fools/" class="game-card">
+                <h3>🍽️ Banquet for Fools</h3>
+                <p class="desc">Puzzle solutions, character guides, and hidden endings.</p>
+                <span class="tag">6 guides</span>
+            </a>
+            <a href="/shinehill/" class="game-card">
+                <h3>⛰️ Shinehill</h3>
+                <p class="desc">Building guides, resource management, and farming strategies.</p>
+                <span class="tag">6 guides</span>
+            </a>
+            <a href="/dogpile/" class="game-card">
+                <h3>🐕 Dogpile</h3>
+                <p class="desc">Card game strategies, deck builds, meta analysis, and tips.</p>
+                <span class="tag">6 guides</span>
+            </a>
+            <a href="/everything-is-crab/" class="game-card">
+                <h3>🦀 Everything is Crab</h3>
+                <p class="desc">Evolution paths, combat techniques, and hidden secrets.</p>
+                <span class="tag">6 guides</span>
+            </a>
+            <a href="/news-tower/" class="game-card">
+                <h3>📰 News Tower</h3>
+                <p class="desc">Management tips, upgrade priorities, and optimization guides.</p>
+                <span class="tag">6 guides</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            <a href="/black-myth-wukong/about.html">About</a> ·
+            <a href="/black-myth-wukong/privacy.html">Privacy Policy</a> ·
+            <a href="/black-myth-wukong/contact.html">Contact</a>
+        </p>
+        <p style="margin-top:0.5rem">&copy; 2026 Game Guides Network. All rights reserved.</p>
+    </footer>
+</body>
+</html>
