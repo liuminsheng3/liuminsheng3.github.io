@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Crawl-delay: 5
+Sitemap: http://playguides.net/don039t-eat-the-cashier/sitemap.xml
+
+User-agent: GPTBot
+Disallow: /

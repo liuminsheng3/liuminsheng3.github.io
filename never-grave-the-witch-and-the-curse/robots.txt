@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Crawl-delay: 5
+Sitemap: http://playguides.net/never-grave-the-witch-and-the-curse/sitemap.xml
+
+User-agent: GPTBot
+Disallow: /

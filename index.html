@@ -3,171 +3,732 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Expert game guides, walkthroughs, tips and strategies for the latest and most popular games. Visit us at playguides.net.">
-    <title>PlayGuides.net — Game Guides Network</title>
-    <style>
-        :root {
-            --bg: #0d1117;
-            --bg-card: #161b22;
-            --text: #c9d1d9;
-            --text-dim: #8b949e;
-            --accent: #58a6ff;
-            --border: #30363d;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            background: var(--bg);
-            color: var(--text);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            min-height: 100vh;
-        }
-        .hero {
-            text-align: center;
-            padding: 4rem 1.5rem 2rem;
-            border-bottom: 1px solid var(--border);
-            background: linear-gradient(180deg, #0d1117 0%, #161b22 100%);
-        }
-        .hero h1 { font-size: 2.5rem; color: #f0f6fc; margin-bottom: 0.5rem; }
-        .hero p { color: var(--text-dim); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
-        .hero .count { color: var(--accent); font-weight: bold; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem 1.5rem; }
-        .game-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1rem;
-        }
-        .game-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.25rem;
-            transition: border-color 0.2s, transform 0.15s;
-            text-decoration: none;
-            display: block;
-            color: var(--text);
-        }
-        .game-card:hover {
-            border-color: var(--accent);
-            transform: translateY(-2px);
-        }
-        .game-card h3 { font-size: 1.05rem; color: #f0f6fc; margin-bottom: 0.25rem; }
-        .game-card .desc { color: var(--text-dim); font-size: 0.85rem; }
-        .game-card .tag {
-            display: inline-block;
-            background: rgba(88,166,255,0.15);
-            color: var(--accent);
-            font-size: 0.72rem;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-top: 0.5rem;
-        }
-        footer {
-            text-align: center;
-            padding: 3rem 1.5rem;
-            color: var(--text-dim);
-            font-size: 0.82rem;
-            border-top: 1px solid var(--border);
-        }
-        footer a { color: var(--accent); text-decoration: none; }
-        .section-title {
-            font-size: 1.3rem;
-            color: #f0f6fc;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--border);
-        }
-    </style>
+    <title>PlayGuides.net — Game Guides, Walkthroughs, Builds and Codes</title>
+    <meta name="description" content="PlayGuides.net organizes game guides by title, with focused walkthroughs, beginner routes, rewards, codes, builds, and strategy pages.">
+    <meta name="keywords" content="game guides, walkthroughs, game tips, builds, codes, tier lists, PlayGuides">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="Guide Team">
+    <link rel="canonical" href="http://playguides.net/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="PlayGuides.net — Game Guides, Walkthroughs, Builds and Codes">
+    <meta property="og:description" content="PlayGuides.net organizes game guides by title, with focused walkthroughs, beginner routes, rewards, codes, builds, and strategy pages.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://playguides.net/">
+    <meta property="og:site_name" content="PlayGuides.net">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://placehold.co/1200x630/0c0d10/ff4757?text=PlayGuides.net&font=raleway">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PlayGuides.net — Game Guides, Walkthroughs, Builds and Codes">
+    <meta name="twitter:description" content="PlayGuides.net organizes game guides by title, with focused walkthroughs, beginner routes, rewards, codes, builds, and strategy pages.">
+    <meta name="twitter:image" content="https://placehold.co/1200x630/0c0d10/ff4757?text=PlayGuides.net&font=raleway">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "PlayGuides.net", "description": "Game guide hub organized by title and player intent.", "url": "http://playguides.net/", "potentialAction": {"@type": "SearchAction", "target": "http://playguides.net/search?q={search_term_string}", "query-input": "required name=search_term_string"}}</script>
+
+    <!-- Analytics & Monetization -->
+    <!-- Root hub: configure GA4 and AdSense from config.yaml before production deploy -->
+
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div class="hero">
-        <h1>🎮 Game Guides Network</h1>
-        <p>Expert walkthroughs, tips, and strategies for <span class="count">14</span> games — written by players, for players.</p>
-    </div>
 
-    <div class="container">
-        <h2 class="section-title">Explore Our Guides</h2>
-        <div class="game-grid">
-            <a href="/black-myth-wukong/" class="game-card">
-                <h3>🐵 Black Myth: Wukong</h3>
-                <p class="desc">Complete walkthroughs, boss strategies, builds, and tier lists.</p>
-                <span class="tag">14 guides</span>
-            </a>
-            <a href="/monster-hunter-wilds/" class="game-card">
-                <h3>⚔️ Monster Hunter Wilds</h3>
-                <p class="desc">Weapon guides, monster strategies, farming routes, and builds.</p>
-                <span class="tag">6 guides</span>
-            </a>
-            <a href="/elden-ring-nightreign/" class="game-card">
-                <h3>💀 Elden Ring Nightreign</h3>
-                <p class="desc">Survival mode strategies, character builds, and boss tactics.</p>
-                <span class="tag">6 guides</span>
-            </a>
-            <a href="/phantom-blade-zero/" class="game-card">
-                <h3>🗡️ Phantom Blade Zero</h3>
-                <p class="desc">Combat guides, weapon unlocks, secret locations, and tips.</p>
-                <span class="tag">6 guides</span>
-            </a>
-            <a href="/star-survivors/" class="game-card">
-                <h3>🚀 Star Survivors</h3>
-                <p class="desc">Survivor builds, upgrade paths, enemy guides, and strategies.</p>
-                <span class="tag">6 guides</span>
-            </a>
-            <a href="/crimson-desert/" class="game-card">
-                <h3>🏜️ Crimson Desert</h3>
-                <p class="desc">Open-world guides, combat mechanics, quest walkthroughs.</p>
-                <span class="tag">6 guides</span>
-            </a>
-            <a href="/vampire-crawlers/" class="game-card">
-                <h3>🧛 Vampire Crawlers</h3>
-                <p class="desc">Dungeon strategies, character builds, and loot farming guides.</p>
-                <span class="tag">6 guides</span>
-            </a>
-            <a href="/besmirch/" class="game-card">
-                <h3>🩸 Besmirch</h3>
-                <p class="desc">Souls-like combat tips, boss guides, and progression paths.</p>
-                <span class="tag">6 guides</span>
-            </a>
-            <a href="/wicked-seed/" class="game-card">
-                <h3>🌱 Wicked Seed</h3>
-                <p class="desc">Roguelike strategies, seed combinations, and build optimization.</p>
-                <span class="tag">6 guides</span>
-            </a>
-            <a href="/banquet-for-fools/" class="game-card">
-                <h3>🍽️ Banquet for Fools</h3>
-                <p class="desc">Puzzle solutions, character guides, and hidden endings.</p>
-                <span class="tag">6 guides</span>
-            </a>
-            <a href="/shinehill/" class="game-card">
-                <h3>⛰️ Shinehill</h3>
-                <p class="desc">Building guides, resource management, and farming strategies.</p>
-                <span class="tag">6 guides</span>
-            </a>
-            <a href="/dogpile/" class="game-card">
-                <h3>🐕 Dogpile</h3>
-                <p class="desc">Card game strategies, deck builds, meta analysis, and tips.</p>
-                <span class="tag">6 guides</span>
-            </a>
-            <a href="/everything-is-crab/" class="game-card">
-                <h3>🦀 Everything is Crab</h3>
-                <p class="desc">Evolution paths, combat techniques, and hidden secrets.</p>
-                <span class="tag">6 guides</span>
-            </a>
-            <a href="/news-tower/" class="game-card">
-                <h3>📰 News Tower</h3>
-                <p class="desc">Management tips, upgrade priorities, and optimization guides.</p>
-                <span class="tag">6 guides</span>
-            </a>
+<!-- ═══ Site Header ═══ -->
+<header class="site-header">
+    <div class="site-header-inner">
+        <a href="/" class="site-logo" aria-label="Go to homepage">
+            <span class="logo-icon">🎮</span>
+            PlayGuides.net
+        </a>
+        <div class="header-search">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search guides..." id="headerSearch"
+                   aria-label="Search guides">
         </div>
     </div>
+</header>
 
-    <footer>
-        <p>
-            <a href="/black-myth-wukong/about.html">About</a> ·
-            <a href="/black-myth-wukong/privacy.html">Privacy Policy</a> ·
-            <a href="/black-myth-wukong/contact.html">Contact</a>
+<!-- ═══ Sticky Navigation ═══ -->
+<nav class="main-nav" aria-label="Main navigation">
+    <div class="main-nav-inner">
+        <a href="/" class="active">Home</a>
+        <a href="/editorial-policy.html">Editorial Policy</a><a href="/contact.html">Contact</a>
+        <a href="/sitemap.html">All Guides</a>
+    </div>
+</nav>
+
+<!-- ═══ Main Layout ═══ -->
+<div class="page-layout">
+
+    <!-- ── Content ── -->
+    <main class="content" id="main-content">
+        
+        
+<div class="hero">
+  <h1>PlayGuides.net</h1>
+  <p>Focused game guides, walkthroughs, builds, codes, rewards, and strategy pages grouped by game.</p>
+  <div class="hero-badges">
+    <span class="badge hot">Updated June 25, 2026</span>
+    <span class="badge">34 Game Hubs</span>
+  </div>
+</div>
+<section class="start-panel">
+  <div>
+    <span class="section-kicker">Growth focus</span>
+    <h2>Start with the games that already have demand</h2>
+    <p>Core hubs receive deeper editorial investment first. Maintain hubs stay available. Archive hubs are preserved but should not receive new content until demand is revalidated.</p>
+  </div>
+  <ol class="start-list">
+    <li><a href="/black-myth-wukong/">Black Myth Wukong</a><span>Core guide hub</span></li>
+    <li><a href="/monster-hunter-wilds/">Monster Hunter Wilds</a><span>Core guide hub</span></li>
+    <li><a href="/elden-ring-nightreign/">Elden Ring Nightreign</a><span>Core guide hub</span></li>
+    <li><a href="/crimson-desert/">Crimson Desert</a><span>Core guide hub</span></li>
+  </ol>
+</section>
+<div class="section-heading"><h2>Core Game Hubs</h2><a href="/sitemap.html">All Games -></a></div>
+<div class="article-cards">
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Core</span>
+        <h3><a href="/black-myth-wukong/">Black Myth Wukong</a></h3>
+        <p>Complete Black Myth Wukong guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Black Myth Wukong in 2026.</p>
+        <div class="card-meta">
+            <span>30 guides</span>
+            <span>30,524 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Core</span>
+        <h3><a href="/crimson-desert/">Crimson Desert</a></h3>
+        <p>Complete Crimson Desert guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Crimson Desert in 2026.</p>
+        <div class="card-meta">
+            <span>30 guides</span>
+            <span>30,238 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Core</span>
+        <h3><a href="/elden-ring-nightreign/">Elden Ring Nightreign</a></h3>
+        <p>Complete Elden Ring Nightreign guide with tips, tricks, tier lists, codes, walkthrough, and more. Everything you need to master Elden Ring Nightreign.</p>
+        <div class="card-meta">
+            <span>30 guides</span>
+            <span>29,577 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Core</span>
+        <h3><a href="/monster-hunter-wilds/">Monster Hunter Wilds</a></h3>
+        <p>Complete Monster Hunter Wilds guide with tips, tricks, tier lists, codes, walkthrough, and more. Everything you need to master Monster Hunter Wilds.</p>
+        <div class="card-meta">
+            <span>30 guides</span>
+            <span>29,101 words</span>
+        </div>
+    </div>
+</div>
+</div>
+<div class="section-heading"><h2>Maintain Hubs</h2></div>
+<div class="article-cards">
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Maintain</span>
+        <h3><a href="/everything-is-crab/">Everything is Crab</a></h3>
+        <p>Complete Everything is Crab guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Everything is Crab in 2026.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,901 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Maintain</span>
+        <h3><a href="/news-tower/">News Tower</a></h3>
+        <p>Complete News Tower guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master News Tower in 2026.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>5,897 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Maintain</span>
+        <h3><a href="/phantom-blade-zero/">Phantom Blade Zero</a></h3>
+        <p>Complete Phantom Blade Zero guide with tips, tricks, tier lists, codes, walkthrough, and more. Everything you need to master Phantom Blade Zero.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>4,867 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Maintain</span>
+        <h3><a href="/vampire-crawlers/">Vampire Crawlers</a></h3>
+        <p>Complete Vampire Crawlers guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Vampire Crawlers in 2026.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,950 words</span>
+        </div>
+    </div>
+</div>
+</div>
+<div class="section-heading"><h2>Archive Hubs</h2></div>
+<div class="article-cards">
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/quotvoices-of-the-voidquot-alpha/">&quot;Voices Of The Void&quot; Alpha</a></h3>
+        <p>Complete &quot;Voices Of The Void&quot; Alpha guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master &quot;Voices Of The Voi</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,641 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/a-date-with-death/">A Date with Death</a></h3>
+        <p>Complete A Date with Death guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master A Date with Death in 2026.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,321 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/arcadie-cold-lands-pcmacos/">Arcadie: Cold Lands (PC/macOS)</a></h3>
+        <p>Complete Arcadie: Cold Lands (PC/macOS) guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Arcadie: Cold Lands (PC/macOS</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,547 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/baldi039s-basics-plus/">Baldi&#039;s Basics Plus</a></h3>
+        <p>Complete Baldi&#039;s Basics Plus guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Baldi&#039;s Basics Plus in 2026.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,329 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/banquet-for-fools/">Banquet for Fools</a></h3>
+        <p>Complete Banquet for Fools guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Banquet for Fools in 2026.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,310 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/basilisk---2000/">Basilisk - 2000</a></h3>
+        <p>Complete Basilisk - 2000 guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Basilisk - 2000 in 2026.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,794 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/besmirch/">Besmirch</a></h3>
+        <p>Complete Besmirch guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Besmirch in 2026.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,576 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/dead-or-alive-6-last-round/">Dead or Alive 6: Last Round</a></h3>
+        <p>Complete Dead or Alive 6: Last Round guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Dead or Alive 6: Last Round in 2</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,636 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/dogpile/">Dogpile</a></h3>
+        <p>Complete Dogpile guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Dogpile in 2026.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>5,881 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/don039t-eat-the-cashier/">Don&#039;t eat the cashier!</a></h3>
+        <p>Complete Don&#039;t eat the cashier! guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Don&#039;t eat the cashier! in 2</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,467 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/don039t-sleep-with-the-fishes/">Don&#039;t Sleep With The Fishes</a></h3>
+        <p>Complete Don&#039;t Sleep With The Fishes guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Don&#039;t Sleep With The F</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,380 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/friday-night-funkin/">Friday Night Funkin'</a></h3>
+        <p>Complete Friday Night Funkin' guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Friday Night Funkin' in 2026.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>3,728 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/impossible-mission-3-c64/">Impossible Mission 3 (C64)</a></h3>
+        <p>Complete Impossible Mission 3 (C64) guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Impossible Mission 3 (C64) in 202</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>5,823 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/librarian-tidy-up-the-arcane-library/">Librarian: Tidy Up the Arcane Library!</a></h3>
+        <p>Complete Librarian: Tidy Up the Arcane Library! guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Librarian: Tidy Up th</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,747 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/my-sweet-housemate/">My Sweet! Housemate</a></h3>
+        <p>Complete My Sweet! Housemate guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master My Sweet! Housemate in 2026.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>5,983 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/never-grave-the-witch-and-the-curse/">Never Grave: The Witch and the Curse</a></h3>
+        <p>Complete Never Grave: The Witch and the Curse guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Never Grave: The Witch </p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,779 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/night-of-the-nun-aka-nun-massacre/">Night of the Nun... aka Nun Massacre</a></h3>
+        <p>Complete Night of the Nun... aka Nun Massacre guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Night of the Nun... aka</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,767 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/shinehill/">Shinehill</a></h3>
+        <p>Complete Shinehill guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Shinehill in 2026.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,069 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/silence-channel-2/">Silence Channel 2</a></h3>
+        <p>Complete Silence Channel 2 guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Silence Channel 2 in 2026.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,670 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/star-survivors/">Star Survivors</a></h3>
+        <p>Complete Star Survivors guide with tips, tricks, tier lists, codes, walkthrough, and more. Everything you need to master Star Survivors.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>5,128 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/starseed-3-game-boy-color/">Starseed 3 (Game Boy Color)</a></h3>
+        <p>Complete Starseed 3 (Game Boy Color) guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Starseed 3 (Game Boy Color) in 2</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,845 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/thats-not-my-neighbor/">That's not my Neighbor</a></h3>
+        <p>Complete That's not my Neighbor guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master That's not my Neighbor in 2026.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>3,764 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/the-adventures-of-elliot-the-millennium-tales/">The Adventures of Elliot: The Millennium Tales</a></h3>
+        <p>Complete The Adventures of Elliot: The Millennium Tales guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master The Adventure</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>7,240 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/tour-de-france-2026/">Tour de France 2026</a></h3>
+        <p>Complete Tour de France 2026 guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Tour de France 2026 in 2026.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>3,764 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/trail-of-gods-the-cursed-island/">TRAIL OF GODS: the cursed island</a></h3>
+        <p>Complete TRAIL OF GODS: the cursed island guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master TRAIL OF GODS: the cursed i</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>7,199 words</span>
+        </div>
+    </div>
+</div>
+
+<div class="article-card">
+    <div class="card-body">
+        <span class="card-category">Archive</span>
+        <h3><a href="/wicked-seed/">Wicked Seed</a></h3>
+        <p>Complete Wicked Seed guide with expert tips, tricks, tier lists, codes, walkthroughs, and strategies. Everything you need to master Wicked Seed in 2026.</p>
+        <div class="card-meta">
+            <span>6 guides</span>
+            <span>6,579 words</span>
+        </div>
+    </div>
+</div>
+</div>
+
+        
+    </main>
+
+    <!-- ── Sidebar ── -->
+    <aside class="sidebar" aria-label="Sidebar">
+        <div class="sidebar-box">
+            <h3>Popular Guides</h3>
+            <ol>
+                <li><a href="/black-myth-wukong/">Black Myth Wukong</a></li><li><a href="/crimson-desert/">Crimson Desert</a></li><li><a href="/elden-ring-nightreign/">Elden Ring Nightreign</a></li><li><a href="/monster-hunter-wilds/">Monster Hunter Wilds</a></li><li><a href="/everything-is-crab/">Everything is Crab</a></li>
+            </ol>
+        </div>
+
+        <div class="cta-box">
+            <h4>Want More Guides?</h4>
+            <p>Bookmark us for the latest tips, tricks & walkthroughs.</p>
+            <a href="/">Explore All Guides →</a>
+        </div>
+    </aside>
+</div>
+
+<!-- ═══ Footer ═══ -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-col">
+            <h4>About Us</h4>
+            <p>Your #1 source for PlayGuides.net guides, tips, tricks, and walkthroughs. Updated regularly with the latest strategies.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/sitemap.html">All Games</a></li>
+                <li><a href="/sitemap.html">All Guides</a></li>
+                <li><a href="/sitemap.xml" target="_blank">XML Sitemap</a></li>
+                <li><a href="/editorial-policy.html">Editorial Policy</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Popular</h4>
+            <ul>
+                <li><a href="/black-myth-wukong/">Black Myth Wukong</a></li><li><a href="/crimson-desert/">Crimson Desert</a></li><li><a href="/elden-ring-nightreign/">Elden Ring Nightreign</a></li><li><a href="/monster-hunter-wilds/">Monster Hunter Wilds</a></li><li><a href="/everything-is-crab/">Everything is Crab</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 PlayGuides.net. All rights reserved.</p>
+        <p style="margin-top:0.25rem">
+            <a href="/about.html">About</a> ·
+            <a href="/editorial-policy.html">Editorial Policy</a> ·
+            <a href="/privacy.html">Privacy Policy</a> ·
+            <a href="/contact.html">Contact</a> ·
+            <a href="/sitemap.html">Sitemap</a>
         </p>
-        <p style="margin-top:0.5rem">&copy; 2026 Game Guides Network. All rights reserved.</p>
-    </footer>
+    </div>
+</footer>
+
+<!-- ═══ Mobile Bottom Navigation ═══ -->
+<nav class="mobile-bottom-nav" aria-label="Mobile navigation">
+    <a href="/" class="active">
+        <span class="nav-icon">⌂</span> Home
+    </a>
+    <a href="/sitemap.html">
+        <span class="nav-icon">≡</span> All Guides
+    </a>
+    <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">
+        <span class="nav-icon">↑</span> Top
+    </a>
+</nav>
+
+<!-- ═══ Cookie Consent Banner ═══ -->
+<div id="cookie-consent" class="cookie-banner">
+    <div class="cookie-inner">
+        <div class="cookie-text">
+            <strong>🍪 Cookie Notice</strong>
+            <p>We use cookies to improve your browsing experience, serve personalized ads, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. <a href="/privacy.html">Learn more</a></p>
+        </div>
+        <div class="cookie-actions">
+            <button id="cookie-reject" class="cookie-btn cookie-btn-outline">Reject</button>
+            <button id="cookie-accept" class="cookie-btn cookie-btn-solid">Accept All</button>
+        </div>
+    </div>
+</div>
+
+<script>
+// Simple client-side search — redirects to Google site: search
+document.getElementById('headerSearch').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+        var q = encodeURIComponent(this.value.trim() + ' site:http://playguides.net/');
+        window.location.href = 'https://www.google.com/search?q=' + q;
+    }
+});
+</script>
+
+<!-- Interactive Features: Checklists, Tier Lists, Helpful Widget -->
+<script>
+(function() {
+    // ═══ Progression Checklist ═══
+    var checklists = document.querySelectorAll('.progression-checklist');
+    checklists.forEach(function(list) {
+        var listId = list.getAttribute('data-checklist-id') || 'checklist';
+        var storageKey = 'guide-checklist-' + listId;
+
+        // Load saved state
+        var saved = {};
+        try { saved = JSON.parse(localStorage.getItem(storageKey) || '{}'); } catch(e) {}
+
+        var items = list.querySelectorAll('.checklist-item');
+        var progressBar = list.querySelector('.checklist-progress-bar');
+        var statsEl = list.querySelector('.checklist-stats');
+
+        function updateProgress() {
+            var total = items.length;
+            var checked = list.querySelectorAll('.checklist-item.checked').length;
+            var pct = total > 0 ? Math.round((checked / total) * 100) : 0;
+            if (progressBar) progressBar.style.width = pct + '%';
+            if (statsEl) statsEl.textContent = checked + '/' + total + ' completed (' + pct + '%)';
+        }
+
+        items.forEach(function(item) {
+            var idx = item.getAttribute('data-idx');
+            if (saved[idx]) item.classList.add('checked');
+
+            item.addEventListener('click', function() {
+                this.classList.toggle('checked');
+                saved[idx] = this.classList.contains('checked');
+                try { localStorage.setItem(storageKey, JSON.stringify(saved)); } catch(e) {}
+                updateProgress();
+
+                // Haptic feedback on mobile
+                if (navigator.vibrate) navigator.vibrate(10);
+            });
+        });
+
+        updateProgress();
+
+        // Reset button
+        var resetBtn = list.querySelector('.checklist-reset');
+        if (resetBtn) {
+            resetBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                items.forEach(function(item) {
+                    item.classList.remove('checked');
+                    var idx = item.getAttribute('data-idx');
+                    delete saved[idx];
+                });
+                try { localStorage.setItem(storageKey, JSON.stringify(saved)); } catch(e) {}
+                updateProgress();
+            });
+        }
+    });
+
+    // ═══ Was This Helpful? Widget ═══
+    var helpfulWidgets = document.querySelectorAll('.helpful-widget');
+    helpfulWidgets.forEach(function(widget) {
+        var widgetId = widget.getAttribute('data-helpful-id') || 'helpful';
+        var storageKey = 'guide-helpful-' + widgetId;
+
+        var savedVote = localStorage.getItem(storageKey);
+        var thanksMsg = widget.querySelector('.helpful-thanks');
+
+        if (savedVote) {
+            var btn = widget.querySelector('.helpful-btn[data-vote="' + savedVote + '"]');
+            if (btn) btn.classList.add('voted');
+            if (thanksMsg) thanksMsg.style.display = 'block';
+        }
+
+        var buttons = widget.querySelectorAll('.helpful-btn');
+        buttons.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                if (this.classList.contains('voted')) return;
+                // Remove all voted states
+                buttons.forEach(function(b) { b.classList.remove('voted'); });
+                this.classList.add('voted');
+                localStorage.setItem(storageKey, this.getAttribute('data-vote'));
+                if (thanksMsg) thanksMsg.style.display = 'block';
+            });
+        });
+    });
+
+    // ═══ Active nav link highlighting ═══
+    var currentPath = window.location.pathname;
+    var navLinks = document.querySelectorAll('.main-nav a');
+    navLinks.forEach(function(link) {
+        var href = link.getAttribute('href');
+        if (href && currentPath.endsWith(href.replace(/^.*\//, '/'))) {
+            link.classList.add('active');
+        }
+        if (href === '/' && (currentPath === '//' || currentPath.endsWith('/index.html'))) {
+            link.classList.add('active');
+        }
+    });
+
+    // Mobile bottom nav active
+    var mobLinks = document.querySelectorAll('.mobile-bottom-nav a');
+    mobLinks.forEach(function(link) {
+        var href = link.getAttribute('href');
+        if (href && (currentPath.endsWith(href.replace(/^.*\//, '/')) || currentPath === href)) {
+            link.classList.add('active');
+        }
+    });
+})();
+</script>
+
+<!-- Cookie Consent Logic -->
+<script>
+(function() {
+    var banner = document.getElementById('cookie-consent');
+    var consent = localStorage.getItem('cookie-consent');
+    if (consent === 'accepted' || consent === 'rejected') {
+        banner.style.display = 'none';
+    }
+
+    document.getElementById('cookie-accept').addEventListener('click', function() {
+        localStorage.setItem('cookie-consent', 'accepted');
+        banner.style.display = 'none';
+    });
+
+    document.getElementById('cookie-reject').addEventListener('click', function() {
+        localStorage.setItem('cookie-consent', 'rejected');
+        banner.style.display = 'none';
+    });
+})();
+</script>
+
 </body>
 </html>

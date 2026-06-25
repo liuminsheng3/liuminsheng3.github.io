@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Crawl-delay: 5
+Sitemap: http://playguides.net/the-adventures-of-elliot-the-millennium-tales/sitemap.xml
+
+User-agent: GPTBot
+Disallow: /

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Crawl-delay: 5
+Sitemap: http://playguides.net/impossible-mission-3-c64/sitemap.xml
+
+User-agent: GPTBot
+Disallow: /

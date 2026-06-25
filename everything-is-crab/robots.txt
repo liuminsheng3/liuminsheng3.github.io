@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Crawl-delay: 5
+Sitemap: http://playguides.net/everything-is-crab/sitemap.xml
+
+User-agent: GPTBot
+Disallow: /

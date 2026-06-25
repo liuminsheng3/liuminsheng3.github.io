@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Crawl-delay: 5
+Sitemap: http://playguides.net/night-of-the-nun-aka-nun-massacre/sitemap.xml
+
+User-agent: GPTBot
+Disallow: /

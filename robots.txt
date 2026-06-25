@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://liuminsheng3.github.io/black-myth-wukong/sitemap.xml
+Sitemap: http://playguides.net/sitemap.xml

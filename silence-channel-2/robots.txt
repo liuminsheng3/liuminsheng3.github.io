@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Crawl-delay: 5
+Sitemap: http://playguides.net/silence-channel-2/sitemap.xml
+
+User-agent: GPTBot
+Disallow: /
