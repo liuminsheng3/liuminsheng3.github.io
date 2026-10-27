@@ -1,2 +1,1 @@
-# AdSense ads.txt — update pub_id after AdSense approval
-# google.com, pub-XXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-2738793816693290, DIRECT, f08c47fec0942fa0
